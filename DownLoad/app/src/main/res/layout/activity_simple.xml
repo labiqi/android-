@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="hello world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFileName" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbProgress"
+        android:max="100"
+        android:layout_below="@+id/tvFileName"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:id="@+id/btStop"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pbProgress"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载"
+        android:id="@+id/btStart"
+        android:layout_below="@+id/pbProgress"
+        android:layout_toLeftOf="@+id/btStop" />
+    <Button
+        android:layout_below="@+id/btStart"
+        android:id="@+id/more_thread_load"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="点击进入多线程下载"/>
+
+</RelativeLayout>
